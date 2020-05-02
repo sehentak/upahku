@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Upahku</string>
+    <string name="app_name" translatable="false">UpahKu</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_salary">Salary</string>
+    <string name="menu_chart">Chart</string>
+    <string name="menu_profile">Profile</string>
 </resources>
