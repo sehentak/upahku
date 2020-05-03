@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_home">Beranda</string>
+    <string name="menu_salary">Upah</string>
+    <string name="menu_chart">Grafik</string>
+    <string name="menu_profile">Akun</string>
+
+    <string name="button_policy">Kebijakan Privasi</string>
+    <string name="button_terms">Ketentuan layanan</string>
+    <string name="button_rating">Beri kami Bintang</string>
+    <string name="button_logout">Keluar</string>
+</resources>

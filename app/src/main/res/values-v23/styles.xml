@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppTheme" parent="Base">
-        <item name="colorPrimaryDark">@android:color/white</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
     </style>
 
     <style name="AppTheme.NoActionBar" parent="Base.NoActionBar">
-        <item name="colorPrimaryDark">@android:color/white</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
     </style>
 </resources>

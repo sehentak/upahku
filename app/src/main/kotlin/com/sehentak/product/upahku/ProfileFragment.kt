@@ -1,5 +1,6 @@
 package com.sehentak.product.upahku
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -25,12 +26,16 @@ class ProfileFragment: Fragment() {
         return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
+    @Suppress("DEPRECATION")
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val toolbarView = view.findViewById<MaterialToolbar>(R.id.app_toolbar)
-        val textViewName = view.findViewById<TextView>(R.id.profile_tv_name)
+        val textVersion = view.findViewById<TextView>(R.id.profile_tv_version)
 
+        toolbarView.setBackgroundColor(resources.getColor(R.color.colorPrimary))
         toolbarView.title = getString(R.string.menu_profile)
-        textViewName.text = getString(R.string.menu_profile)
+        toolbarView.setTitleTextColor(resources.getColor(android.R.color.white))
+        textVersion.text = "v${BuildConfig.VERSION_NAME}"
     }
 }
