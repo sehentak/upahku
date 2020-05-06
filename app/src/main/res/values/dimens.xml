@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_double">24dp</dimen>
     <dimen name="margin_line">0.7dp</dimen>
 
     <dimen name="text_title">22sp</dimen>

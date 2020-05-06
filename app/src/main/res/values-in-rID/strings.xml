@@ -4,6 +4,7 @@
     <string name="menu_salary">Upah</string>
     <string name="menu_chart">Grafik</string>
     <string name="menu_profile">Akun</string>
+    <string name="menu_create">Menghitung gaji</string>
 
     <string name="button_policy">Kebijakan Privasi</string>
     <string name="button_terms">Ketentuan layanan</string>

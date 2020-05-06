@@ -1,12 +1,13 @@
 package com.sehentak.product.upahku
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class SalaryFragment: Fragment() {
 
@@ -28,9 +29,12 @@ class SalaryFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val toolbarView = view.findViewById<MaterialToolbar>(R.id.app_toolbar)
-        val textViewName = view.findViewById<TextView>(R.id.salary_tv_name)
+        val createButton = view.findViewById<FloatingActionButton>(R.id.salary_fab_create)
 
         toolbarView.title = getString(R.string.menu_salary)
-        textViewName.text = getString(R.string.menu_salary)
+        createButton.setOnClickListener {
+            val intent = Intent(activity, CreateActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
