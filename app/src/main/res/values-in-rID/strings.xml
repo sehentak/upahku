@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="hint_principe_salary">Gaji Pokok</string>
+    <string name="hint_overtime">Tunjangan Lembur</string>
+    <string name="hint_working">Hari kerja</string>
+    <string name="hint_transport">Tunjangan Transportasi</string>
+    <string name="hint_allowance">Tunjangan Lain-lain</string>
+    <string name="hint_use_currency">dalam satuan rupiah</string>
+    <string name="hint_use_hour">dalam satuan jam</string>
+    <string name="hint_per_hour">per jam dalam satuan rupiah</string>
+    <string name="hint_per_day">per hari dalam satuan rupiah</string>
+    <string name="hint_use_day">dalam satuan hari</string>
+    <string name="hint_hour">Hour</string>
+
     <string name="menu_home">Beranda</string>
     <string name="menu_salary">Upah</string>
     <string name="menu_chart">Grafik</string>
@@ -10,4 +23,5 @@
     <string name="button_terms">Ketentuan layanan</string>
     <string name="button_rating">Beri kami Bintang</string>
     <string name="button_logout">Keluar</string>
+    <string name="button_calculate">Hitung</string>
 </resources>

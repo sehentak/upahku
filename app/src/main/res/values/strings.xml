@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name" translatable="false">UpahKu</string>
+    
+    <string name="hint_principe_salary">Principe Salary</string>
+    <string name="hint_working">Working days</string>
+    <string name="hint_overtime">Overtime</string>
+    <string name="hint_transport">Transport</string>
+    <string name="hint_allowance">Allowance</string>
+    <string name="hint_use_currency">in rupiah</string>
+    <string name="hint_use_hour">in hour/s</string>
+    <string name="hint_per_hour">per hour in rupiah</string>
+    <string name="hint_per_day">per day in rupiah</string>
+    <string name="hint_use_day">in day/s</string>
+    <string name="hint_hour">Hour</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_salary">Salary</string>
@@ -13,4 +25,5 @@
     <string name="button_terms">Terms of service</string>
     <string name="button_rating">Rating</string>
     <string name="button_logout">Logout</string>
+    <string name="button_calculate">Calculate</string>
 </resources>

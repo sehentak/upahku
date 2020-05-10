@@ -1,12 +1,12 @@
 <resources>
 
     <style name="Base" parent="Theme.MaterialComponents.Light.DarkActionBar">
-        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="Base.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
