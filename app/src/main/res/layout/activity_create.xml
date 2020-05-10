@@ -8,6 +8,84 @@
 
     <include layout="@layout/app_toolbar"/>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin_default"
+            android:text="Gaji Pokok"/>
+
+        <EditText
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:hint="masukkan gaji pokok"
+            android:textSize="@dimen/margin_default"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin_default"
+            android:text="Lembur"/>
+
+        <EditText
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:hint="masukkan gaji pokok"
+            android:textSize="@dimen/margin_default"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_default">
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/margin_default"
+        android:text="Transport"/>
+        <EditText
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:hint="masukkan gaji pokok"
+        android:textSize="@dimen/margin_default"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin_default"
+            android:text="tunjangan"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="masukkan gaji pokok"
+            android:textSize="@dimen/margin_default"/>
+
+    </LinearLayout>
 
 
 </LinearLayout>
