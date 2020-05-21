@@ -26,7 +26,8 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:maxLines="1"
-            android:ellipsize="end"/>
+            android:ellipsize="end"
+            android:nextFocusDown="@id/create_edt_overtime_hour"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -51,7 +52,8 @@
                 android:inputType="number"
                 android:maxLines="1"
                 android:ems="5"
-                android:ellipsize="end"/>
+                android:ellipsize="end"
+                android:nextFocusDown="@id/create_edt_overtime_price"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,7 +74,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:maxLines="1"
-                android:ellipsize="end"/>
+                android:ellipsize="end"
+                android:nextFocusDown="@id/create_edt_transport_hour"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -99,7 +102,8 @@
                 android:inputType="number"
                 android:ems="5"
                 android:maxLines="1"
-                android:ellipsize="end"/>
+                android:ellipsize="end"
+                android:nextFocusDown="@id/create_edt_transport_price"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -120,7 +124,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:maxLines="1"
-                android:ellipsize="end"/>
+                android:ellipsize="end"
+                android:nextFocusDown="@id/create_edt_allowance"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -142,7 +147,8 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:maxLines="1"
-            android:ellipsize="end"/>
+            android:ellipsize="end"
+            android:imeOptions="actionGo"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -176,6 +182,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_default"
         android:text="@string/button_save"
+        android:backgroundTint="@color/colorAccent"
         android:visibility="gone"/>
 
 </LinearLayout>

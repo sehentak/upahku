@@ -1,5 +1,6 @@
 package com.sehentak.product.upahku
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextUtils.isEmpty
@@ -32,12 +33,16 @@ class CreateActivity: AppCompatActivity(), View.OnClickListener {
         return true
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.create_btn_process -> {
-                create_tv_result.text = calculation().toString()
-                create_btn_save.visibility = View.VISIBLE
-                create_btn_process.visibility = View.GONE
+                val result = calculation()
+                if (result > 0) {
+                    create_tv_result.text = "Rp $result"
+                    create_btn_save.visibility = View.VISIBLE
+                    create_btn_process.visibility = View.GONE
+                }
             }
 
             R.id.create_btn_save -> finish()
