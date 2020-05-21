@@ -45,12 +45,12 @@ class CreateActivity: AppCompatActivity(), View.OnClickListener {
     }
 
     private fun calculation(): Int {
-        val salaryPrice = create_edt_salary.toString().trim()
-        val overTimeHour = create_edt_overtime_hour.toString().trim()
-        val overTimePrice = create_edt_overtime_price.toString().trim()
-        val transportHour = create_edt_transport_hour.toString().trim()
-        val transportPrice = create_edt_transport_price.toString().trim()
-        val allowancePrice = create_edt_allowance.toString().trim()
+        val salaryPrice = create_edt_salary.text.toString().trim()
+        val overTimeHour = create_edt_overtime_hour.text.toString().trim()
+        val overTimePrice = create_edt_overtime_price.text.toString().trim()
+        val transportHour = create_edt_transport_hour.text.toString().trim()
+        val transportPrice = create_edt_transport_price.text.toString().trim()
+        val allowancePrice = create_edt_allowance.text.toString().trim()
 
         val ovHour = if (!isEmpty(overTimeHour)) overTimeHour.toInt() else 0
         val ovPrice = if (!isEmpty(overTimePrice)) overTimePrice.toInt() else 0
