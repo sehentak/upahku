@@ -2,6 +2,7 @@ package com.sehentak.product.upahku
 
 import android.os.Bundle
 import android.text.Editable
+import android.text.TextUtils.isEmpty
 import android.text.TextWatcher
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -23,6 +24,7 @@ class CreateActivity: AppCompatActivity(), View.OnClickListener {
         supportActionBar?.setDisplayShowHomeEnabled(true)
 
         create_btn_process.setOnClickListener(this)
+        create_btn_save.setOnClickListener(this)
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -33,18 +35,35 @@ class CreateActivity: AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.create_btn_process -> {
-                val salary = create_edt_salary.toString().trim()
-                val overtimehour = create_edt_overtime_hour.toString().trim()
-                val overtimeprice = create_edt_overtime_price.toString().trim()
-                val transporthour = create_edt_transport_hour.toString().trim()
-                val transportprice = create_edt_transport_price.toString().trim()
-                val allowance = create_edt_allowance.toString().trim()
-
-
-
+                create_tv_result.text = calculation().toString()
+                create_btn_save.visibility = View.VISIBLE
+                create_btn_process.visibility = View.GONE
             }
-        }
 
+            R.id.create_btn_save -> finish()
+        }
+    }
+
+    private fun calculation(): Int {
+        val salaryPrice = create_edt_salary.toString().trim()
+        val overTimeHour = create_edt_overtime_hour.toString().trim()
+        val overTimePrice = create_edt_overtime_price.toString().trim()
+        val transportHour = create_edt_transport_hour.toString().trim()
+        val transportPrice = create_edt_transport_price.toString().trim()
+        val allowancePrice = create_edt_allowance.toString().trim()
+
+        val ovHour = if (!isEmpty(overTimeHour)) overTimeHour.toInt() else 0
+        val ovPrice = if (!isEmpty(overTimePrice)) overTimePrice.toInt() else 0
+        val overTime = ovHour * ovPrice
+
+        val trHour = if (!isEmpty(transportHour)) transportHour.toInt() else 0
+        val trPrice = if (!isEmpty(transportPrice)) transportPrice.toInt() else 0
+        val transport = trHour * trPrice
+
+        val salary = if (!isEmpty(salaryPrice)) salaryPrice.toInt() else 0
+        val allowance = if (!isEmpty(allowancePrice)) allowancePrice.toInt() else 0
+
+        return salary + overTime + transport + allowance
     }
 
     private fun TextInputEditText.textWatcher() {

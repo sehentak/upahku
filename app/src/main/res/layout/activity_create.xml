@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:animateLayoutChanges="true">
 
     <include layout="@layout/app_toolbar"/>
 
@@ -145,6 +146,18 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/create_tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_default"
+        android:padding="@dimen/margin_default"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_title"/>
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -156,5 +169,13 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_default"
         android:text="@string/button_calculate"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/create_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        android:text="@string/button_save"
+        android:visibility="gone"/>
 
 </LinearLayout>

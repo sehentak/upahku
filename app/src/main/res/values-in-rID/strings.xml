@@ -24,4 +24,5 @@
     <string name="button_rating">Beri kami Bintang</string>
     <string name="button_logout">Keluar</string>
     <string name="button_calculate">Hitung</string>
+    <string name="button_save">Simpan</string>
 </resources>
