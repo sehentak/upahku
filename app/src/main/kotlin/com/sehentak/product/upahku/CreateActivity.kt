@@ -34,9 +34,17 @@ class CreateActivity: AppCompatActivity(), View.OnClickListener {
         when (view?.id) {
             R.id.create_btn_process -> {
                 val salary = create_edt_salary.toString().trim()
+                val overtimehour = create_edt_overtime_hour.toString().trim()
+                val overtimeprice = create_edt_overtime_price.toString().trim()
+                val transporthour = create_edt_transport_hour.toString().trim()
+                val transportprice = create_edt_transport_price.toString().trim()
+                val allowance = create_edt_allowance.toString().trim()
+
+
 
             }
         }
+
     }
 
     private fun TextInputEditText.textWatcher() {
